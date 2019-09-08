@@ -19,10 +19,10 @@ public class MainActivity extends AppCompatActivity {
         et.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String[] numbers = {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"};
+                String[] numbers = {"First", "Second", "Third"};
                 DialogHandler.createSingleItemDialog(MainActivity.this, Arrays.asList(numbers),
-                        "No. Of Unmarried Brothers", s -> {
-                    et.setText(s);
+                        "RecyclerView Spinner", s -> {
+                    et.setText(""+s);
                 });
 
             }
